@@ -22,7 +22,7 @@ export default function GetInvolved() {
         <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {roles.map((r, i) => (
             <Reveal key={r.name} delay={i * 0.08}>
-              <div className="h-full rounded-2xl border border-line p-7 transition-shadow hover:shadow-md">
+              <div className="h-full rounded-2xl border border-line p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
                 <h3 className="text-lg font-medium text-accent">{r.name}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-body">{r.body}</p>
               </div>

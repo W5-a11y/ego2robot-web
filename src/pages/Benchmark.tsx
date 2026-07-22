@@ -273,8 +273,11 @@ export default function Benchmark() {
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {datasets.map((d, i) => (
               <Reveal key={d.name} delay={i * 0.05}>
-                <div className="overflow-hidden rounded-2xl border border-line transition-shadow hover:shadow-md">
-                  <Placeholder label={`${d.name} still`} className="aspect-[16/10] w-full border-0 border-b border-line" />
+                <div className="group overflow-hidden rounded-2xl border border-line transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+                  <Placeholder
+                    label={`${d.name} still`}
+                    className="aspect-[16/10] w-full border-0 border-b border-line transition-transform duration-500 group-hover:scale-[1.05]"
+                  />
                   <div className="p-5">
                     <h3 className="font-medium">{d.name}</h3>
                     <span className="mt-2 inline-block rounded-full border border-line px-3 py-1 text-xs text-mut">

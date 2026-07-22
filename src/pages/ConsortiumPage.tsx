@@ -72,14 +72,16 @@ export default function ConsortiumPage() {
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {universities.map((u, i) => (
               <Reveal key={u.name} delay={i * 0.08}>
-                <div className="h-full overflow-hidden rounded-2xl border border-line transition-shadow hover:shadow-md">
-                  <img
-                    src={u.img}
-                    alt={`${u.name} campus`}
-                    loading="lazy"
-                    className="aspect-[16/9] w-full border-b border-line object-cover"
-                    style={{ objectPosition: u.position }}
-                  />
+                <div className="group h-full overflow-hidden rounded-2xl border border-line transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+                  <div className="overflow-hidden border-b border-line">
+                    <img
+                      src={u.img}
+                      alt={`${u.name} campus`}
+                      loading="lazy"
+                      className="aspect-[16/9] w-full object-cover transition-transform duration-500 group-hover:scale-[1.05]"
+                      style={{ objectPosition: u.position }}
+                    />
+                  </div>
                   <div className="p-6">
                     <h3 className="text-lg font-medium">{u.name}</h3>
                     <p className="mt-1 text-sm text-body">{u.detail}</p>

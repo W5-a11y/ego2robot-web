@@ -24,7 +24,7 @@ export default function Roadmap() {
           {phases.map((p, i) => (
             <Reveal key={p.tag} delay={i * 0.08}>
               <div
-                className={`h-full rounded-2xl border p-6 ${
+                className={`h-full rounded-2xl border p-6 transition-all duration-300 hover:-translate-y-1 hover:bg-white/[0.09] ${
                   p.active ? 'border-accent/60 bg-white/[0.07]' : 'border-white/10 bg-white/[0.04]'
                 }`}
               >

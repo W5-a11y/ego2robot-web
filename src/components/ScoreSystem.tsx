@@ -72,9 +72,12 @@ export default function ScoreSystem() {
         <div className="mt-16 grid gap-7 md:grid-cols-3">
           {layers.map((layer, i) => (
             <Reveal key={layer.num} delay={i * 0.12}>
-              <article className="group">
+              <article className="group transition-transform duration-300 hover:-translate-y-1.5">
                 <div className="relative overflow-hidden rounded-2xl">
-                  <Placeholder label={layer.slot} className="aspect-[4/5] w-full" />
+                  <Placeholder
+                    label={layer.slot}
+                    className="aspect-[4/5] w-full transition-transform duration-500 group-hover:scale-[1.04]"
+                  />
                   <span className="absolute left-5 top-5 text-sm font-medium text-accent">
                     {layer.num}
                   </span>
@@ -108,10 +111,19 @@ export default function ScoreSystem() {
           </p>
           <Link
             to="/benchmark"
-            className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-accent"
+            className="group mt-6 inline-flex items-center gap-2 text-sm font-medium text-accent"
           >
             Explore the full protocol
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden>
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              aria-hidden
+              className="transition-transform duration-300 group-hover:translate-x-1"
+            >
               <path d="M5 12h14m-6-6 6 6-6 6" />
             </svg>
           </Link>

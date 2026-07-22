@@ -17,10 +17,19 @@ export default function CtaBand() {
             </div>
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 rounded-full bg-accent px-7 py-3.5 text-sm font-medium text-white transition-colors hover:bg-accent/90"
+              className="group inline-flex items-center gap-2 rounded-full bg-accent px-7 py-3.5 text-sm font-medium text-white transition-colors hover:bg-accent/90"
             >
               Join the Consortium
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden>
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                aria-hidden
+                className="transition-transform duration-300 group-hover:translate-x-1"
+              >
                 <path d="M5 12h14m-6-6 6 6-6 6" />
               </svg>
             </Link>

@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import type { ReactNode } from 'react'
 
 export default function PageHero({
@@ -22,14 +23,40 @@ export default function PageHero({
         Header image placeholder
       </span>
       <div className="relative mx-auto w-full max-w-[1200px] px-6 pb-16 pt-36 sm:px-10">
-        <p className="text-xs font-medium uppercase tracking-[0.3em] text-accent">
+        <motion.p
+          initial={{ opacity: 0, y: 14 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: 'easeOut' }}
+          className="text-xs font-medium uppercase tracking-[0.3em] text-accent"
+        >
           [&nbsp;&nbsp;{eyebrow}&nbsp;&nbsp;]
-        </p>
-        <h1 className="mt-5 max-w-3xl text-4xl font-medium leading-[1.1] tracking-tight text-white sm:text-6xl">
-          {title}
+        </motion.p>
+        <h1
+          aria-label={title}
+          className="mt-5 max-w-3xl text-4xl font-medium leading-[1.1] tracking-tight text-white sm:text-6xl"
+        >
+          {title.split(' ').map((word, i) => (
+            <motion.span
+              key={i}
+              aria-hidden
+              initial={{ opacity: 0, y: 18 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.15 + i * 0.06, duration: 0.5, ease: 'easeOut' }}
+              className="inline-block whitespace-pre"
+            >
+              {word}{' '}
+            </motion.span>
+          ))}
         </h1>
         {children && (
-          <div className="mt-6 max-w-xl leading-relaxed text-white/75">{children}</div>
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.45, duration: 0.55, ease: 'easeOut' }}
+            className="mt-6 max-w-xl leading-relaxed text-white/75"
+          >
+            {children}
+          </motion.div>
         )}
       </div>
     </section>
