@@ -3,7 +3,7 @@ import Reveal from './Reveal'
 
 export default function Mission() {
   return (
-    <section className="bg-white">
+    <section className="bg-page">
       <div className="mx-auto grid max-w-[1200px] items-center gap-14 px-6 py-28 sm:px-10 lg:grid-cols-2 lg:py-36">
         <Reveal>
           <Placeholder

@@ -59,7 +59,7 @@ export default function ConsortiumPage() {
       </PageHero>
 
       {/* Universities */}
-      <section className="bg-white">
+      <section className="bg-page">
         <div className="mx-auto max-w-[1200px] px-6 py-24 sm:px-10">
           <Reveal>
             <p className="text-xs font-medium uppercase tracking-[0.3em] text-accent">
@@ -114,7 +114,7 @@ export default function ConsortiumPage() {
           <Reveal delay={0.15}>
             <div className="grid gap-4 sm:grid-cols-2">
               {industry.map((p) => (
-                <div key={p.name} className="rounded-2xl border border-line bg-white p-6">
+                <div key={p.name} className="rounded-2xl border border-line bg-page p-6">
                   <h3 className="font-medium">{p.name}</h3>
                   <p className="mt-2 text-xs uppercase tracking-[0.14em] text-mut">{p.role}</p>
                 </div>
@@ -124,7 +124,7 @@ export default function ConsortiumPage() {
         </div>
       </section>
 
-      <div className="bg-white pt-28" />
+      <div className="bg-page pt-28" />
       <CtaBand />
     </main>
   )

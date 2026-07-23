@@ -22,7 +22,7 @@ const faqs = [
 
 export default function Faq() {
   return (
-    <section className="bg-white">
+    <section className="bg-page">
       <div className="mx-auto grid max-w-[1200px] gap-14 px-6 py-28 sm:px-10 lg:grid-cols-[1fr_1.4fr] lg:py-36">
         <Reveal>
           <Eyebrow label="FAQ" />

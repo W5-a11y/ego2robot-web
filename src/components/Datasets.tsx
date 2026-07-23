@@ -37,7 +37,7 @@ export default function Datasets() {
                   {g.items.map((d) => (
                     <span
                       key={d}
-                      className="rounded-full border border-line bg-white px-5 py-2.5 text-sm text-ink"
+                      className="rounded-full border border-line bg-page px-5 py-2.5 text-sm text-ink"
                     >
                       {d}
                     </span>

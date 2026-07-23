@@ -10,7 +10,7 @@ const roles = [
 
 export default function GetInvolved() {
   return (
-    <section id="involved" className="bg-white">
+    <section id="involved" className="bg-page">
       <div className="mx-auto max-w-[1200px] px-6 py-28 sm:px-10 lg:py-36">
         <Reveal>
           <Eyebrow label="Get involved" />

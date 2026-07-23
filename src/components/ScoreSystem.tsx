@@ -52,7 +52,7 @@ const layers = [
 
 export default function ScoreSystem() {
   return (
-    <section id="benchmark" className="bg-white">
+    <section id="benchmark" className="bg-page">
       <div className="mx-auto max-w-[1200px] px-6 py-28 sm:px-10 lg:py-36">
         <div className="grid gap-10 lg:grid-cols-[1fr_auto] lg:items-end">
           <Reveal>
@@ -81,7 +81,7 @@ export default function ScoreSystem() {
                   <span className="absolute left-5 top-5 text-sm font-medium text-accent">
                     {layer.num}
                   </span>
-                  <span className="absolute right-5 top-5 rounded-full bg-white px-3 py-1 text-xs font-medium text-ink shadow-sm">
+                  <span className="absolute right-5 top-5 rounded-full bg-page px-3 py-1 text-xs font-medium text-ink shadow-sm">
                     {layer.pts} pts
                   </span>
                   <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/55 to-transparent p-5 pt-14">

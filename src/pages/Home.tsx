@@ -15,7 +15,7 @@ export default function Home() {
       <ScoreSystem />
       <Roadmap />
       <Consortium />
-      <div className="bg-white pt-28" />
+      <div className="bg-page pt-28" />
       <CtaBand />
     </main>
   )

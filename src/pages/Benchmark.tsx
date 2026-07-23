@@ -104,7 +104,7 @@ export default function Benchmark() {
       </PageHero>
 
       {/* Pipeline */}
-      <section className="bg-white">
+      <section className="bg-page">
         <div className="mx-auto max-w-[1200px] px-6 py-24 sm:px-10">
           <Reveal>
             <LayerEyebrow text="[  Pipeline  ]" />
@@ -141,7 +141,7 @@ export default function Benchmark() {
             </ul>
           </Reveal>
           <Reveal delay={0.15}>
-            <div className="rounded-2xl border border-line bg-white p-7">
+            <div className="rounded-2xl border border-line bg-page p-7">
               <p className="text-xs font-medium uppercase tracking-[0.2em] text-mut">
                 Sample evaluation · Egoverse (episode-level pilot)
               </p>
@@ -167,7 +167,7 @@ export default function Benchmark() {
       </section>
 
       {/* Layer B */}
-      <section className="bg-white">
+      <section className="bg-page">
         <div className="mx-auto grid max-w-[1200px] items-start gap-14 px-6 py-24 sm:px-10 lg:grid-cols-2">
           <Reveal className="lg:order-2">
             <LayerEyebrow text="[  Layer B · 30 pts  ]" />
@@ -181,7 +181,7 @@ export default function Benchmark() {
             </p>
           </Reveal>
           <Reveal delay={0.15} className="lg:order-1">
-            <div className="rounded-2xl border border-line bg-white p-7 shadow-sm">
+            <div className="rounded-2xl border border-line bg-page p-7 shadow-sm">
               <p className="text-xs font-medium uppercase tracking-[0.2em] text-mut">
                 Sample evaluation · Egoverse
               </p>
@@ -226,7 +226,7 @@ export default function Benchmark() {
             </ul>
           </Reveal>
           <Reveal delay={0.15}>
-            <div className="rounded-2xl border border-line bg-white p-7">
+            <div className="rounded-2xl border border-line bg-page p-7">
               <p className="text-xs font-medium uppercase tracking-[0.2em] text-mut">
                 Validated with
               </p>
@@ -257,7 +257,7 @@ export default function Benchmark() {
       </section>
 
       {/* Dataset catalog */}
-      <section className="bg-white">
+      <section className="bg-page">
         <div className="mx-auto max-w-[1200px] px-6 py-24 sm:px-10">
           <Reveal>
             <LayerEyebrow text="[  Dataset catalog  ]" />

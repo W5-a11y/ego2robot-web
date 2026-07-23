@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @theme {
+  --color-page: #ffffff;
   --color-ink: #17181c;
   --color-body: #4b4f58;
   --color-mut: #838790;
@@ -12,12 +13,24 @@
   --font-sans: "Inter", system-ui, sans-serif;
 }
 
+/* Dark theme — toggled by adding .dark to <html>; every token-based
+   utility (bg-page, bg-soft, text-ink, border-line…) follows automatically */
+.dark {
+  color-scheme: dark;
+  --color-page: #101216;
+  --color-ink: #f0f2f5;
+  --color-body: #b3b8c2;
+  --color-mut: #878d99;
+  --color-line: rgba(255, 255, 255, 0.1);
+  --color-soft: #16191f;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background: #ffffff;
+  background: var(--color-page);
   color: var(--color-ink);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;

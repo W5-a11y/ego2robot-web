@@ -13,7 +13,7 @@ const industry = ['Google DeepMind', 'xAI', '1X Technologies', 'Robot-data partn
 
 export default function Consortium() {
   return (
-    <section className="bg-white">
+    <section className="bg-page">
       <div className="mx-auto max-w-[1200px] px-6 py-28 sm:px-10 lg:py-36">
         <Reveal>
           <Eyebrow label="Consortium" />

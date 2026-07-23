@@ -20,7 +20,7 @@ export default function Contact() {
   }
 
   const field =
-    'w-full rounded-lg border border-line bg-white px-4 py-3 text-sm outline-none transition-colors focus:border-accent'
+    'w-full rounded-lg border border-line bg-page px-4 py-3 text-sm outline-none transition-colors focus:border-accent'
 
   return (
     <main>
@@ -37,7 +37,7 @@ export default function Contact() {
       <section className="bg-soft">
         <div className="mx-auto grid max-w-[1200px] gap-10 px-6 py-24 sm:px-10 lg:grid-cols-[1.4fr_1fr]">
           <Reveal>
-            <form onSubmit={submit} className="rounded-2xl border border-line bg-white p-8">
+            <form onSubmit={submit} className="rounded-2xl border border-line bg-page p-8">
               <h2 className="text-2xl font-medium">Send us a message</h2>
               <div className="mt-7 space-y-5">
                 <div>
@@ -90,7 +90,7 @@ export default function Contact() {
 
           <Reveal delay={0.15}>
             <div className="space-y-5">
-              <div className="rounded-2xl border border-line bg-white p-7">
+              <div className="rounded-2xl border border-line bg-page p-7">
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent text-white">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden>
                     <rect x="3" y="5" width="18" height="14" rx="2" />
@@ -103,7 +103,7 @@ export default function Contact() {
                   {CONTACT_EMAIL}
                 </a>
               </div>
-              <div className="rounded-2xl border border-line bg-white p-7">
+              <div className="rounded-2xl border border-line bg-page p-7">
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent text-white">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden>
                     <path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z" />
